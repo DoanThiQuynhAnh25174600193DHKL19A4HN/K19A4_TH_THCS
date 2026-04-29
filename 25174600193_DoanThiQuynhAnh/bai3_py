@@ -1,0 +1,14 @@
+x = int(input("Nhập x: "))
+
+a = 0
+b = 1
+
+while a < x:
+    c = a + b
+    a = b
+    b = c
+
+if a == x:
+    print(x, "thuộc dãy Fibonacci")
+else:
+    print(x, "không thuộc dãy Fibonacci")

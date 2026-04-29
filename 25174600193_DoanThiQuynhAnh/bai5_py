@@ -1,0 +1,17 @@
+N = int(input("Nhập N: "))
+
+a = 0
+b = 1
+
+while a <= N + 100:
+    if a >= N:
+        dem = 0
+        for i in range(1, a + 1):
+            if a % i == 0:
+                dem += 1
+        if dem == 2:
+            print(a, end=" ")
+
+    c = a + b
+    a = b
+    b = c
